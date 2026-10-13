@@ -31,11 +31,11 @@ Edit service descriptions, audience categories and process stages in `lib/conten
 
 ## Enquiries
 
-Default mode is `local`: validation and spam/rate-limit protection run, then submitted details are discarded. No email is sent; no enquiry record is stored; no personal enquiry content is logged. Use fictional details only.
+Complete Resend settings enable email mode automatically unless an explicit mode is set. `ENQUIRY_MODE=local` is a development-only dry run: details are discarded and no email is sent. Production rejects local mode or incomplete email settings instead of reporting a successful submission. No personal enquiry content is logged.
 
-Copy `.env.example` to `.env.local` to configure a future integration. Email mode uses the server-side Resend API and requires an approved recipient and verified sender, plus a shared Upstash-compatible Redis REST rate limiter. Never put secrets in public environment variables or source control. Without a shared limiter, email mode fails closed. A provider acceptance response does not prove final inbox delivery. Test approved email routing and provider failures before enabling real enquiries.
+Copy `.env.example` to `.env.local` to configure a future integration. Email mode uses the server-side Resend API and requires an approved recipient and verified sender, plus a shared Upstash-compatible Redis REST rate limiter. Never put secrets in public environment variables or source control. Without a shared limiter, production email mode fails closed. Development email tests can use the existing in-memory limiter. A provider acceptance response does not prove final inbox delivery. Test approved email routing and provider failures before enabling real enquiries.
 
-Set `SITE_ORIGIN` to the exact public origin for email mode. The production proxy must overwrite `X-Real-IP` with the actual client address. Validate that contract for the selected hosting platform. Production abuse protection and retention decisions need an owner review. The local limiter intentionally uses one shared local bucket.
+Set `SITE_ORIGIN` to the exact public origin for production email mode. Development validates against the local request origin, so the same Resend settings can be tested on localhost. The production proxy must overwrite `X-Real-IP` with the actual client address. Validate that contract for the selected hosting platform. Production abuse protection and retention decisions need an owner review. The local limiter intentionally uses one shared local bucket. Save credentials in `.env` or `.env.local` and restart the development server after changes. Run `node --import tsx scripts/send-test-email.ts recipient@example.com` to send both templates once to a single test inbox. For Vercel, set `ENQUIRY_MODE=email`, all Resend settings, `SITE_ORIGIN`, and both Upstash variables in the Production environment, then redeploy.
 
 ## Before publication
 
