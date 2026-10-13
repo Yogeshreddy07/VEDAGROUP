@@ -4,7 +4,7 @@ import { NextRequest } from 'next/server';
 import { POST } from '../app/api/enquiry/route';
 import { getEnquiryMode } from '../lib/enquiry-config';
 
-const payload={name:'Sample Person',email:'sample@example.com',organisation:'Sample Organisation',market:'India',service:'international-market-entry',message:'A sample enquiry for delivery validation only.',privacy:true,website:''};
+const payload={name:'Sample Person',email:'sample@example.com',phone:'+442079460958',organisation:'Sample Organisation',market:'India',service:'international-market-entry',message:'A sample enquiry for delivery validation only.',privacy:true,website:''};
 const configured={RESEND_API_KEY:'test-key',ENQUIRY_FROM:'Veda <sender@example.com>',ENQUIRY_TO:'admin@example.com'};
 test('email mode is inferred from complete credentials, with no production dry-run success',()=>{
  assert.equal(getEnquiryMode({...configured,NODE_ENV:'development'}),'email');

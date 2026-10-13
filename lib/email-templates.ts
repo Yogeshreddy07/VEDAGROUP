@@ -40,13 +40,13 @@ ${eyebrow('NEW WEBSITE ENQUIRY')}
 <div style="font-family:${font};font-size:14px;color:${muted}">${data.organisation?escapeHtml(data.organisation)+' &middot; ':''}Received ${escapeHtml(fmtDate(received))}</div>
 </td></tr>
 <tr><td style="padding:28px 44px 8px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid ${border}">
-${row('Full name',data.name)}${row('Business email',data.email,'mailto:'+data.email)}${row('Organisation',data.organisation)}${row('Market of interest',data.market)}${row('Service of interest',service)}
+${row('Full name',data.name)}${row('Business email',data.email,'mailto:'+data.email)}${row('Phone number',data.phone||'',data.phone?'tel:'+data.phone.replace(/[^+0-9]/g,''):undefined)}${row('Organisation',data.organisation)}${row('Market of interest',data.market)}${row('Service of interest',service)}
 </table></td></tr>
 <tr><td style="padding:28px 44px 8px">${eyebrow('THE OPPORTUNITY')}${messageBlock(data.message)}</td></tr>
 <tr><td style="padding:28px 44px 40px"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${navy}"><a href="mailto:${escapeHtml(data.email)}?subject=${encodeURIComponent('Re: Your enquiry to Veda Group')}" style="display:inline-block;padding:15px 26px;font-family:${font};font-size:12px;font-weight:700;letter-spacing:.06em;color:#ffffff;text-decoration:none">REPLY TO ${escapeHtml(firstName(data.name).toUpperCase())} &nbsp;&#8599;</a></td></tr></table>
 <div style="margin-top:14px;font-family:${font};font-size:12px;color:${muted}">Replying to this email also goes directly to ${escapeHtml(data.email)}. Please respond within 24 hours.</div></td></tr>`;
  const html=layout({preheader:`${data.name}${data.organisation?` from ${data.organisation}`:''} has submitted an enquiry${service?` about ${service}`:''}.`,body,footer:'Submitted through the contact form on vedagroup.uk. The sender acknowledged the privacy information before submitting.'});
- const text=`New website enquiry\n\nFull name: ${data.name}\nBusiness email: ${data.email}\nOrganisation: ${data.organisation||'Not provided'}\nMarket of interest: ${data.market||'Not provided'}\nService of interest: ${service||'Not provided'}\nReceived: ${fmtDate(received)}\n\nThe opportunity:\n${data.message}`;
+ const text=`New website enquiry\n\nFull name: ${data.name}\nBusiness email: ${data.email}\nPhone number: ${data.phone||'Not provided'}\nOrganisation: ${data.organisation||'Not provided'}\nMarket of interest: ${data.market||'Not provided'}\nService of interest: ${service||'Not provided'}\nReceived: ${fmtDate(received)}\n\nThe opportunity:\n${data.message}`;
  return {subject,html,text};
 }
 

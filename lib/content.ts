@@ -26,3 +26,6 @@ export const stages = [
  ['Progress','Coordinate agreed follow-up and review progress together.']
 ];
 export const pages = [ '/','/about','/services',...services.map(s=>'/services/'+s.slug),'/who-we-help','/our-approach','/contact','/privacy','/cookies','/terms'];
+
+// Only substantive published pages belong in search; legal drafts and empty Insights are excluded.
+export const searchPages = pages.filter(path => !['/privacy', '/cookies', '/terms', '/insights'].includes(path));

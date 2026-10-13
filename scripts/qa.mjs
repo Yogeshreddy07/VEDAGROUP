@@ -15,14 +15,14 @@ const links=await page.locator('a[href^="/"]').evaluateAll(nodes=>[...new Set(no
 for(const href of links){const response=await page.request.get(root+href);assert.equal(response.status(),200,href)}
 await page.goto(root+'/contact?service=strategic-partnerships');assert.equal(await page.locator('#service').inputValue(),'strategic-partnerships');
 await page.getByRole('button',{name:'Submit test enquiry'}).click();assert.ok(await page.locator('#name-error').isVisible());
-await page.locator('#name').fill('Sample Person');await page.locator('#email').fill('sample@example.com');await page.locator('#message').fill('A sample international opportunity for local testing only.');await page.locator('[name=privacy]').check();await page.getByRole('button',{name:'Submit test enquiry'}).click();await page.getByRole('status').filter({hasText:'No email was sent'}).waitFor();
+await page.locator('#name').fill('Sample Person');await page.locator('#email').fill('sample@example.com');await page.locator('.country-trigger').click();await page.locator('.country-search').fill('United Kingdom');await page.locator('.country-search').press('Enter');await page.locator('#phone').fill('020 7946 0958');await page.locator('#message').fill('A sample international opportunity for local testing only.');await page.locator('[name=privacy]').check();await page.getByRole('button',{name:'Submit test enquiry'}).click();await page.getByRole('status').filter({hasText:'No email was sent'}).waitFor();
 await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:'test-results/contact-desktop.png',fullPage:true});
 await page.setViewportSize({width:390,height:844});
 for(const route of routes){await page.goto(root+route);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth),false,route+' mobile overflow')}
 await page.goto(root);await page.getByRole('button',{name:'Menu'}).click();assert.equal(await page.getByRole('button',{name:'Close'}).getAttribute('aria-expanded'),'true');await page.keyboard.press('Escape');assert.equal(await page.getByRole('button',{name:'Menu'}).getAttribute('aria-expanded'),'false');await page.screenshot({path:'test-results/home-mobile.png',fullPage:true});
 const mobileAxe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();assert.equal(mobileAxe.violations.length,0,JSON.stringify(mobileAxe.violations));
 await page.setViewportSize({width:768,height:1024});await page.goto(root);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth),false);await page.screenshot({path:'test-results/home-tablet.png',fullPage:true});
-const payload={name:'Sample Person',email:'sample@example.com',message:'A sample enquiry for local validation.',privacy:true,website:''};
+const payload={name:'Sample Person',email:'sample@example.com',phone:'+442079460958',message:'A sample enquiry for local validation.',privacy:true,website:''};
 assert.equal((await page.request.post(root+'/api/enquiry',{data:payload,headers:{Origin:'https://untrusted.example'}})).status(),403);
 assert.equal((await page.request.post(root+'/api/enquiry',{data:{},headers:{Origin:root}})).status(),422);
 assert.equal((await page.request.post(root+'/api/enquiry',{data:{...payload,website:'spam'},headers:{Origin:root}})).status(),422);

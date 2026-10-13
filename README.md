@@ -39,7 +39,7 @@ Set `SITE_ORIGIN` to the exact public origin for production email mode. Developm
 
 ## Before publication
 
-This project is local only. Nothing has been deployed or published, and no DNS has changed. `robots.txt` and metadata block indexing. Remove those restrictions only after launch approval.
+This project is local only. Nothing has been deployed or published, and no DNS has changed. `robots.txt` and metadata allow production indexing. Development and Vercel preview builds block indexing; set `SEO_INDEXING=false` before building any other staging environment. See `docs/SEO-PLAN.md` for the research and launch checks.
 
 Confirm the legal company identity, logo and brand direction; available services and audiences; public contact details; email recipient and sender; privacy notice and retention; processors and hosting disclosures; and all final copy. Legal routes are clearly marked review drafts. Optional analytics and tracking are disabled; no cookie banner is needed for optional technologies that are not installed.
 
