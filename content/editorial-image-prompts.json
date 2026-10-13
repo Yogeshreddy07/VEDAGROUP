@@ -1,0 +1,58 @@
+{
+  "generator": "Built-in image_gen",
+  "sharedPrompt": "Use case: photorealistic-natural. Asset type: editorial photograph for Veda Group, a premium international business development website. Landscape 3:2 composition. Restrained architectural editorial photography, sophisticated navy, slate, soft teal and warm stone palette, natural light, real material texture, calm assured mood, exceptional photographic realism. No text, logos, watermarks, handshakes, floating graphics or staged smiling stock-photo poses. ",
+  "assets": [
+    {
+      "file": "public/images/editorial/business-development.webp",
+      "prompt": "A small group of three senior business professionals in tailored understated clothing in a candid commercial discussion at a walnut conference table, contemporary glass meeting room with a distant city view. Wide side view, people secondary to the beautiful space. Authentic, thoughtful conversation."
+    },
+    {
+      "file": "public/images/editorial/international-market-entry.webp",
+      "prompt": "A sophisticated international waterfront business district at blue hour, modern office towers beside a harbour, a curved waterside promenade leading toward the skyline. Atmospheric, grounded architectural photography, no recognisable branded buildings."
+    },
+    {
+      "file": "public/images/editorial/international-representation.webp",
+      "prompt": "Quiet elegant regional office with floor-to-ceiling windows looking across an international city, two chairs and a walnut meeting table arranged for a conversation. Warm morning light, no people, beautiful thoughtful composition."
+    },
+    {
+      "file": "public/images/editorial/export-business-development.webp",
+      "prompt": "High-angle photographic view of an international container port with a cargo vessel, orderly rows of muted blue and rust containers and cranes beside deep blue water. Late afternoon soft light, precise industrial geometry, understated, no readable lettering."
+    },
+    {
+      "file": "public/images/editorial/strategic-partnerships.webp",
+      "prompt": "Two senior executives and a third colleague discussing an open portfolio in a sunlit refined conference room. Candid side view, measured expressions and natural posture, walnut table and stone interior. No handshakes, no legible paperwork."
+    },
+    {
+      "file": "public/images/editorial/business-establishment-support.webp",
+      "prompt": "Beautiful contemporary commercial lobby with warm limestone, walnut reception desk, glass partitions and a sculptural staircase. Quiet purposeful newly established workspace, no logos, no people."
+    },
+    {
+      "file": "public/images/editorial/mergers-acquisitions.webp",
+      "prompt": "An intimate executive boardroom with a dark walnut table and six elegant chairs, understated closed folders, distant layered cityscape through glass. Symmetrical view with subtle depth and dusk light, a setting for considered transaction discussions, no people."
+    },
+    {
+      "file": "public/images/editorial/business-funding-finance.webp",
+      "prompt": "Architectural detail of a prestigious contemporary banking district: elegant pale limestone columns meeting modern glass facades, morning light and deep soft shadows. Human-scale perspective, enduring solidity and discretion, no currency or charts."
+    },
+    {
+      "file": "public/images/editorial/investor-connections.webp",
+      "prompt": "Two senior professionals in a private investment discussion in a refined lounge, seated across a small walnut table, city in the background, natural relaxed posture. Wide editorial view, quiet confidence, no laptops or legible paperwork."
+    },
+    {
+      "file": "public/images/editorial/legal-professional-services.webp",
+      "prompt": "Refined independent professional adviser workspace, walnut shelves with neutral law reference books without readable titles, linen chairs, stone desktop and a carefully arranged closed portfolio, daylight. No gavels, scales, people or text."
+    },
+    {
+      "file": "public/images/editorial/global-perspective.webp",
+      "prompt": "A soaring contemporary glass and limestone business district viewed from below, strong architectural lines rising into a pale blue sky, warm morning sunlight on one facade, muted navy reflections. Powerful elegant portrait-friendly centre crop; clean composition."
+    },
+    {
+      "file": "public/images/editorial/considered-approach.webp",
+      "prompt": "Close editorial still life of a considered strategy session: walnut table, blank ivory notebook, pencil, simple architectural map with no labels, two cups, daylight falling from a large window. No people, no graphs, no readable writing. Generous airy negative space."
+    },
+    {
+      "file": "public/images/editorial/shared-ambition.webp",
+      "prompt": "Contemporary international university and innovation campus: warm stone colonnade, glass research building, landscaped courtyard with a few distant business people and students naturally walking, soft afternoon light. Wide refined architectural composition; people very small, no signage."
+    }
+  ]
+}

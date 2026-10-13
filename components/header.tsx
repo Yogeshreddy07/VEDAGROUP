@@ -26,7 +26,7 @@ export function Header(){
     {before.map(([href,label])=><Link key={href} href={href} className="nav-link" aria-current={path===href?'page':undefined}>{label}<span className="nav-arrow" aria-hidden="true">↗</span></Link>)}
     <details className="dropdown" ref={details}><summary className={'nav-link'+(inServices?' is-current':'')}>Services <Chevron/></summary>
      <div className="dropdown-panel">
-      <div className="mega-intro"><p className="eyebrow">OUR SERVICES</p><p className="mega-title">Practical support for growth across borders.</p><p className="mega-copy">Six focused services to help you explore markets, build relationships and progress opportunities.</p><Link href="/services" className="mega-all">View all services <span aria-hidden="true">→</span></Link></div>
+      <div className="mega-intro"><p className="eyebrow">OUR SERVICES</p><p className="mega-title">Practical support for growth across borders.</p><p className="mega-copy">Focused services to help you explore markets, build relationships and progress opportunities.</p><Link href="/services" className="mega-all">View all services <span aria-hidden="true">→</span></Link></div>
       <ul className="mega-grid">{services.map((s,i)=><li key={s.slug}><Link href={'/services/'+s.slug} className="mega-item" aria-current={path==='/services/'+s.slug?'page':undefined}><span className="mega-index">{String(i+1).padStart(2,'0')}</span><span className="mega-text"><strong>{s.title}</strong><span>{s.summary}</span></span><span className="mega-arrow" aria-hidden="true">↗</span></Link></li>)}</ul>
      </div>
     </details>
