@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { validateEnquiry } from '@/lib/enquiry';
 import { allowRequest } from '@/lib/rate-limit';
+import { adminEnquiryEmail, confirmationEmail } from '@/lib/email-templates';
 export const runtime='nodejs';
 const reply=(body:object,status=200)=>NextResponse.json(body,{status,headers:{'Cache-Control':'no-store'}});
+const sendEmail=(apiKey:string,email:object)=>fetch('https://api.resend.com/emails',{method:'POST',headers:{Authorization:`Bearer ${apiKey}`,'Content-Type':'application/json'},signal:AbortSignal.timeout(10000),body:JSON.stringify(email)});
 export async function POST(request:NextRequest){
  const origin=request.headers.get('origin');
  const expectedOrigin=process.env.SITE_ORIGIN || `${request.nextUrl.protocol}//${request.headers.get('host')}`;
@@ -24,8 +26,11 @@ export async function POST(request:NextRequest){
   if(mode!=='email')return reply({error:'Enquiry delivery is not configured.'},503);
   const apiKey=process.env.RESEND_API_KEY,from=process.env.ENQUIRY_FROM,to=process.env.ENQUIRY_TO;
   if(!apiKey||!from||!to)return reply({error:'Enquiry delivery is not configured. Please try again later.'},503);
-  const response=await fetch('https://api.resend.com/emails',{method:'POST',headers:{Authorization:`Bearer ${apiKey}`,'Content-Type':'application/json'},signal:AbortSignal.timeout(10000),body:JSON.stringify({from,to:[to],reply_to:data.email,subject:'Veda Group website enquiry',text:`Name: ${data.name}\nEmail: ${data.email}\nOrganisation: ${data.organisation}\nMarket: ${data.market}\nService: ${data.service}\n\n${data.message}`})});
+  const admin=adminEnquiryEmail(data),confirmation=confirmationEmail(data);
+  const response=await sendEmail(apiKey,{from,to:to.split(',').map(a=>a.trim()).filter(Boolean),reply_to:data.email,...admin});
   if(!response.ok)return reply({error:'We could not send your enquiry. Please try again later.'},502);
-  return reply({mode:'email',message:'Your enquiry has been accepted for delivery. Thank you for getting in touch.'});
+  // The enquiry is already delivered; a failed acknowledgement must not report failure to the visitor.
+  await sendEmail(apiKey,{from,to:[data.email],...confirmation}).catch(()=>null);
+  return reply({mode:'email',message:'Thank you for getting in touch. We will be in contact with you within 24 hours. A confirmation has been sent to your email.'});
  }catch{return reply({error:'The enquiry service is temporarily unavailable. Please try again later.'},503);}
 }
