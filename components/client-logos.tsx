@@ -21,6 +21,6 @@ function Track({ hidden }: { hidden?: boolean }) {
 }
 
 export function ClientLogos() {
-  return <section className="clients" aria-labelledby="clients-title"><div className="container clients-head"><p className="eyebrow"><span className="dot"/> TRUSTED BY</p><h2 id="clients-title">Institutions and organisations<br className="desktop"/> we have worked with.</h2></div>
+  return <section className="clients" aria-labelledby="clients-title"><div className="container clients-head"><p className="eyebrow"><span className="dot"/> OUR CLIENTS</p><h2 id="clients-title">Universities and organisations<br className="desktop"/> that have trusted us with their growth.</h2></div>
     <div className="client-marquee"><div className="client-rail"><Track/><Track hidden/></div></div></section>;
 }
