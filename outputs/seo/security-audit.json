@@ -1,0 +1,13 @@
+{
+  "auditDate": "2026-10-13",
+  "credentialConfigured": true,
+  "commitsScanned": 6,
+  "historyPaths": [],
+  "browserCredentialPaths": [],
+  "provider": {
+    "readOnlyEndpoint": "/domains",
+    "status": 200,
+    "conclusion": "Provider accepted this key for read access; treat as active and rotate."
+  },
+  "limitations": "Pattern scan covers six available commits and current key in public/browser assets, not other clones, exports, provider logs or hosting settings. No key values recorded; no email sent; no rotation performed."
+}

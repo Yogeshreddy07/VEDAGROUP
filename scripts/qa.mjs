@@ -2,13 +2,13 @@ import { chromium, firefox, webkit } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const root='http://127.0.0.1:3847';
+const root=process.env.QA_URL||'http://127.0.0.1:3847';
 await fs.mkdir('test-results',{recursive:true});
 const browser=await chromium.launch();
 const context=await browser.newContext({viewport:{width:1440,height:1000}});
 const page=await context.newPage();
 const errors=[];page.on('pageerror',e=>errors.push(e.message));
-const routes=['/','/about','/services','/who-we-help','/our-approach','/contact','/privacy','/cookies','/terms','/insights',...['business-development','international-market-entry','international-representation','export-business-development','strategic-partnerships','business-establishment-support'].map(s=>'/services/'+s)];
+const routes=['/','/about','/services','/who-we-help','/our-approach','/contact','/privacy','/cookies','/terms','/insights','/careers','/events',...['business-development','international-market-entry','international-representation','export-business-development','strategic-partnerships','business-establishment-support'].map(s=>'/services/'+s)];
 for(const route of routes){const response=await page.goto(root+route);assert.equal(response.status(),200,route);await page.locator('h1').waitFor();assert.equal(await page.locator('h1').count(),1);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth),false,route+' overflow');const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();assert.equal(result.violations.length,0,route+': '+JSON.stringify(result.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))));}
 await page.goto(root);await page.screenshot({path:'test-results/home-desktop.png',fullPage:true});
 const links=await page.locator('a[href^="/"]').evaluateAll(nodes=>[...new Set(nodes.map(n=>n.getAttribute('href')))]);

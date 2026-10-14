@@ -39,7 +39,7 @@ Set `SITE_ORIGIN` to the exact public origin for production email mode. Developm
 
 ## Before publication
 
-This project is local only. Nothing has been deployed or published, and no DNS has changed. `robots.txt` and metadata allow production indexing. Development and Vercel preview builds block indexing; set `SEO_INDEXING=false` before building any other staging environment. See `docs/SEO-PLAN.md` for the research and launch checks.
+This task made local changes only; a live deployment was separately inspected on 13 October 2026. Set `SITE_URL=https://vedagroup.uk` before building production; production builds on that origin are indexable by default. Development, Vercel previews and nonofficial origins remain nonindexable. Set `SEO_INDEXING=false` for staging and use hosting access protection for private previews. The live host currently redirects non-www to www, contrary to the confirmed canonical origin. Correct that hosting rule before enabling the optional `SEO_CANONICAL_REDIRECT=true` application redirect; otherwise a loop results. See `outputs/seo/` for current evidence and release blockers, and `docs/SEO-PLAN.md` for the previous plan.
 
 Confirm the legal company identity, logo and brand direction; available services and audiences; public contact details; email recipient and sender; privacy notice and retention; processors and hosting disclosures; and all final copy. Legal routes are clearly marked review drafts. Optional analytics and tracking are disabled; no cookie banner is needed for optional technologies that are not installed.
 

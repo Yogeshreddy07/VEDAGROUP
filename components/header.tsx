@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { services } from '@/lib/content';
-const before=[['/','Home'],['/about','About Us']], after=[['/who-we-help','Who We Help'],['/our-approach','Our Approach']];
+const before=[['/','Home'],['/about','About Us']], after=[['/who-we-help','Who We Help'],['/our-approach','Our Approach'],['/careers','Careers'],['/events','Events']];
 const Chevron=()=><svg className="chevron" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" strokeWidth="1.5"/></svg>;
 export function Header(){
  const [open,setOpen]=useState(false); const [scrolled,setScrolled]=useState(false); const path=usePathname(); const ref=useRef<HTMLElement>(null); const button=useRef<HTMLButtonElement>(null); const details=useRef<HTMLDetailsElement>(null);

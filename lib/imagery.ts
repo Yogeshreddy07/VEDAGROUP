@@ -16,4 +16,6 @@ export const editorialImages = {
   perspective:{src:'/images/editorial/global-perspective.webp',alt:'Glass and limestone towers rising into an open sky'},
   approach:{src:'/images/editorial/collaborative-planning.webp',alt:'Three professionals working through a plan together'},
   audiences:{src:'/images/editorial/people-shared-ambition.webp',alt:'International business and education leaders sharing a conversation'},
+  careers:{src:'/images/editorial/careers-team.webp',alt:'Four colleagues sharing ideas around a table in a bright office'},
+  events:{src:'/images/editorial/events-networking.webp',alt:'International business delegates exchanging ideas at a networking reception'},
 };

@@ -1,0 +1,274 @@
+{
+  "auditDate": "2026-10-13",
+  "limitation": "User-agent simulation is not a verified Googlebot IP or Search Console live test.",
+  "results": [
+    {
+      "url": "https://vedagroup.uk/",
+      "status": 308,
+      "headers": {
+        "location": "https://www.vedagroup.uk/",
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=63072000"
+      },
+      "h1Count": 0
+    },
+    {
+      "url": "https://vedagroup.uk/robots.txt",
+      "status": 308,
+      "headers": {
+        "location": "https://www.vedagroup.uk/robots.txt",
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=63072000"
+      },
+      "h1Count": 0,
+      "body": "Redirecting...\n"
+    },
+    {
+      "url": "https://vedagroup.uk/sitemap.xml",
+      "status": 308,
+      "headers": {
+        "location": "https://www.vedagroup.uk/sitemap.xml",
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=63072000"
+      },
+      "h1Count": 0,
+      "body": "Redirecting...\n"
+    },
+    {
+      "url": "https://vedagroup.uk/about",
+      "status": 308,
+      "headers": {
+        "location": "https://www.vedagroup.uk/about",
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=63072000"
+      },
+      "h1Count": 0
+    },
+    {
+      "url": "https://vedagroup.uk/services/international-market-entry",
+      "status": 308,
+      "headers": {
+        "location": "https://www.vedagroup.uk/services/international-market-entry",
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=63072000"
+      },
+      "h1Count": 0
+    },
+    {
+      "url": "https://vedagroup.uk/contact",
+      "status": 308,
+      "headers": {
+        "location": "https://www.vedagroup.uk/contact",
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=63072000"
+      },
+      "h1Count": 0
+    },
+    {
+      "url": "https://vedagroup.uk/services/not-a-service",
+      "status": 308,
+      "headers": {
+        "location": "https://www.vedagroup.uk/services/not-a-service",
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=63072000"
+      },
+      "h1Count": 0
+    },
+    {
+      "url": "https://vedagroup.uk/about/",
+      "status": 308,
+      "headers": {
+        "location": "https://www.vedagroup.uk/about/",
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=63072000"
+      },
+      "h1Count": 0
+    },
+    {
+      "url": "http://vedagroup.uk/",
+      "status": 308,
+      "headers": {
+        "location": "https://vedagroup.uk/",
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": null
+      },
+      "h1Count": 0
+    },
+    {
+      "url": "https://www.vedagroup.uk/",
+      "status": 200,
+      "headers": {
+        "location": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "strict-transport-security": "max-age=63072000"
+      },
+      "title": "Veda Group | International Business Development",
+      "robots": "index, follow",
+      "canonical": "https://vedagroup.uk",
+      "h1Count": 1
+    },
+    {
+      "url": "https://www.vedagroup.uk/robots.txt",
+      "status": 200,
+      "headers": {
+        "location": null,
+        "content-type": "text/plain; charset=utf-8",
+        "x-robots-tag": null,
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "strict-transport-security": "max-age=63072000"
+      },
+      "h1Count": 0,
+      "body": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: https://vedagroup.uk/sitemap.xml\n"
+    },
+    {
+      "url": "https://www.vedagroup.uk/sitemap.xml",
+      "status": 200,
+      "headers": {
+        "location": null,
+        "content-type": "application/xml",
+        "x-robots-tag": null,
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "strict-transport-security": "max-age=63072000"
+      },
+      "h1Count": 0,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>https://vedagroup.uk/</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/about</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/services</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/services/business-development</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/services/international-market-entry</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/services/international-representation</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/services/export-business-development</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/services/strategic-partnerships</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/services/business-establishment-support</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/services/mergers-acquisitions</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/services/business-funding-finance</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/services/investor-connections</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/services/legal-professional-services</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/who-we-help</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/our-approach</loc>\n</url>\n<url>\n<loc>https://vedagroup.uk/contact</loc>\n</url>\n</urlset>\n"
+    },
+    {
+      "url": "https://www.vedagroup.uk/about",
+      "status": 200,
+      "headers": {
+        "location": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "strict-transport-security": "max-age=63072000"
+      },
+      "title": "About Us | Veda Group",
+      "robots": "index, follow",
+      "canonical": "https://vedagroup.uk/about",
+      "h1Count": 1
+    },
+    {
+      "url": "https://www.vedagroup.uk/services/international-market-entry",
+      "status": 200,
+      "headers": {
+        "location": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "strict-transport-security": "max-age=63072000"
+      },
+      "title": "International Market Entry | Veda Group",
+      "robots": "index, follow",
+      "canonical": "https://vedagroup.uk/services/international-market-entry",
+      "h1Count": 1
+    },
+    {
+      "url": "https://www.vedagroup.uk/contact",
+      "status": 200,
+      "headers": {
+        "location": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "strict-transport-security": "max-age=63072000"
+      },
+      "title": "Contact Us | Veda Group",
+      "robots": "index, follow",
+      "canonical": "https://vedagroup.uk/contact",
+      "h1Count": 1
+    },
+    {
+      "url": "https://www.vedagroup.uk/services/not-a-service",
+      "status": 404,
+      "headers": {
+        "location": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "strict-transport-security": "max-age=63072000"
+      },
+      "title": "Veda Group | International Business Development",
+      "robots": "index, follow",
+      "h1Count": 0
+    },
+    {
+      "url": "https://www.vedagroup.uk/about/",
+      "status": 308,
+      "headers": {
+        "location": "/about",
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=63072000"
+      },
+      "h1Count": 0
+    },
+    {
+      "agent": "googlebot",
+      "url": "https://www.vedagroup.uk/",
+      "status": 200,
+      "serverRenderedH1": true
+    },
+    {
+      "agent": "adsbot",
+      "url": "https://www.vedagroup.uk/",
+      "status": 200,
+      "serverRenderedH1": true
+    }
+  ]
+}

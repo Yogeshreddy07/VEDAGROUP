@@ -27,5 +27,19 @@ export const stages = [
 ];
 export const pages = [ '/','/about','/services',...services.map(s=>'/services/'+s.slug),'/who-we-help','/our-approach','/contact','/privacy','/cookies','/terms'];
 
-// Only substantive published pages belong in search; legal drafts and empty Insights are excluded.
-export const searchPages = pages.filter(path => !['/privacy', '/cookies', '/terms', '/insights'].includes(path));
+// Only substantive published pages belong in search; legal drafts and empty Insights, Careers and Events are excluded.
+export const searchPages = pages.filter(path => !['/privacy', '/cookies', '/terms', '/insights', '/careers', '/events'].includes(path));
+
+// Metadata describes the existing service scope, including specialist-advice boundaries.
+export const serviceSeo: Record<string, { description: string; related: string[] }> = {
+ 'business-development': { description: 'Explore business development services with Veda Group: commercial opportunities, relevant relationships, introductions and coordinated next steps.', related: ['international-market-entry', 'strategic-partnerships'] },
+ 'international-market-entry': { description: 'Explore international market entry with Veda Group: routes to market, potential local partners and coordination with suitable specialists.', related: ['international-representation', 'business-establishment-support'] },
+ 'international-representation': { description: 'Discuss country or territory representation with Veda Group, including commercial relationship development and coordination within an agreed scope.', related: ['international-market-entry', 'business-development'] },
+ 'export-business-development': { description: 'Veda Group supports exporters and manufacturers exploring overseas buyers, distributors and commercial channels, with scope agreed individually.', related: ['international-market-entry', 'strategic-partnerships'] },
+ 'strategic-partnerships': { description: 'Explore cross-border business partnerships and joint ventures with Veda Group through potential partner identification and relationship development.', related: ['business-development', 'international-representation'] },
+ 'business-establishment-support': { description: 'Veda Group coordinates introductions to suitable local specialists and providers for organisations exploring a business presence in a new market.', related: ['international-market-entry', 'legal-professional-services'] },
+ 'mergers-acquisitions': { description: 'Explore acquisition target and buyer introductions with Veda Group. Qualified independent professionals provide transaction, legal and financial advice.', related: ['strategic-partnerships', 'legal-professional-services'] },
+ 'business-funding-finance': { description: 'Discuss introductions to banks, lenders and finance providers with Veda Group. Funding decisions and terms remain with the independent provider.', related: ['business-development', 'legal-professional-services'] },
+ 'investor-connections': { description: 'Explore relevant investor and capital-raising specialist introductions with Veda Group. Investment advice and arrangements require qualified firms.', related: ['business-development', 'legal-professional-services'] },
+ 'legal-professional-services': { description: 'Veda Group connects organisations with independent lawyers, accountants and qualified advisers. Specialist advice is provided by those professionals.', related: ['business-establishment-support', 'strategic-partnerships'] },
+};

@@ -8,7 +8,11 @@ export function resolveSiteUrl(value = process.env.SITE_URL || 'https://vedagrou
 export const siteUrl = resolveSiteUrl();
 export const siteDescription = 'Veda Group helps businesses and institutions explore international markets, develop commercial relationships and pursue cross-border opportunities.';
 export function indexingEnabled(env: NodeJS.ProcessEnv = process.env) {
-  return env.NODE_ENV === 'production' && (!env.VERCEL_ENV || env.VERCEL_ENV === 'production') && env.SEO_INDEXING !== 'false';
+  // Production on the official origin is indexable by default; SEO_INDEXING=false opts a staging build out.
+  const officialOrigin = resolveSiteUrl(env.SITE_URL || 'https://vedagroup.uk') === 'https://vedagroup.uk';
+  return officialOrigin && env.NODE_ENV === 'production'
+    && (!env.VERCEL_ENV || env.VERCEL_ENV === 'production')
+    && env.SEO_INDEXING !== 'false';
 }
 export function absoluteUrl(path: string) { return new URL(path, `${siteUrl}/`).href; }
 export function pageMetadata(path: string, title: string, description: string, index = true): Metadata {

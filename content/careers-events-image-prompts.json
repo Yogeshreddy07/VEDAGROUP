@@ -1,0 +1,12 @@
+{
+  "generator": "Built-in image_gen",
+  "assets": [
+    {
+      "file": "public/images/editorial/careers-team.webp",
+      "prompt": "Use case: photorealistic-natural\nAsset type: Careers page editorial hero photograph for Veda Group, an international business development consultancy.\nPrimary request: Four diverse adult colleagues, women and men, collaborating around a walnut table in a contemporary daylight office; an engaged junior colleague shares an idea while a senior colleague listens, communicating career growth, shared ambition and international teamwork.\nStyle/medium: Premium candid editorial business photography, believable human faces and hands, authentic relaxed professional expressions, no staged handshake or camera-facing poses.\nComposition/framing: Landscape 4:3 image, waist-up group framed centrally with ample safe margin on all sides for a 1.3:1 website crop. People are the clear focal point; laptop, notebook and a few papers subtly support the conversation.\nLighting/mood: Soft natural window daylight, calm welcoming atmosphere.\nColor palette: Muted navy, warm walnut, pale stone and subtle teal, matching an understated premium business website.\nConstraints: No text, logos, watermark, collage, borders or website UI. Avoid excessive luxury, empty rooms, dramatic skyline and stock-photo grins."
+    },
+    {
+      "file": "public/images/editorial/events-networking.webp"
+    }
+  ]
+}

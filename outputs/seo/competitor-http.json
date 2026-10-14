@@ -1,0 +1,624 @@
+{
+  "auditDate": "2026-10-13",
+  "results": [
+    {
+      "requestedUrl": "https://www.thevedagroup.com/",
+      "finalUrl": "https://www.thevedagroup.com/",
+      "status": 200,
+      "title": "The Veda Group",
+      "description": "",
+      "approximateExtractedWords": 979,
+      "links": [
+        "/cart",
+        "#page",
+        "/",
+        "/about",
+        "/services",
+        "/gallery-3-1",
+        "/navigating-13-entry",
+        "/education-boarding-schools-more",
+        "/university-entrance",
+        "/examinations",
+        "/achievement",
+        "/mental",
+        "/wellbeing",
+        "/contact-us",
+        "/insights-1",
+        "https://www.thevedagroup.com/services",
+        "https://www.thevedagroup.com/contact-us",
+        "/Services"
+      ],
+      "structuredData": [
+        {
+          "url": "https://www.thevedagroup.com",
+          "name": "The Veda Group",
+          "image": "//images.squarespace-cdn.com/content/v1/5e81037f598f9f6f7a81a028/1595193918919-Y4YLZUOX1OA5QBD0LAWX/logo%252B4a-01.jpg",
+          "@context": "http://schema.org",
+          "@type": "WebSite"
+        }
+      ]
+    },
+    {
+      "requestedUrl": "https://vedagroup.org/about-us",
+      "finalUrl": "https://vedagroup.org/about-us",
+      "status": 200,
+      "title": "About Veda Group | Our Journey from Amsterdam to 15+ Global Brands",
+      "description": "Founded in Amsterdam by Ashok Veda, Veda Group has grown into a multinational with 1,000+ professionals across India, Europe, North America, Southeast Asia and Africa. Discover our story, values and leadership.",
+      "approximateExtractedWords": 559,
+      "links": [
+        "businesses"
+      ],
+      "structuredData": []
+    },
+    {
+      "requestedUrl": "https://vedagroup.in/",
+      "finalUrl": "https://vedagroup.in/",
+      "status": 200,
+      "title": "Veda Group | Textile Machineries and Equipments",
+      "approximateExtractedWords": 508,
+      "links": [
+        "index.html",
+        "profile.html",
+        "#.html",
+        "management.html",
+        "values.html",
+        "products.html",
+        "products2.html",
+        "products3.html",
+        "products5.html",
+        "products6.html",
+        "products7.html",
+        "products8.html",
+        "products9.html",
+        "products10.html",
+        "products11.html",
+        "consultancy.html",
+        "spinners.html",
+        "inquire.html",
+        "contactus.html",
+        "#",
+        "subscribe.html",
+        "associates.html",
+        "http://www.groweway.com"
+      ],
+      "structuredData": []
+    },
+    {
+      "requestedUrl": "https://vedagroupco.com/",
+      "finalUrl": "https://vedagroupco.com/",
+      "status": 200,
+      "title": "Veda Group",
+      "approximateExtractedWords": 766,
+      "links": [
+        "#content",
+        "https://vedagroupco.com/",
+        "https://vedagroupco.com/about/",
+        "https://vedagroupco.com/our-verticals/",
+        "https://vedagroupco.com/our-verticals/residential-projects/",
+        "https://vedagroupco.com/our-verticals/commercial-projects/",
+        "https://vedagroupco.com/our-verticals/plotting/",
+        "https://vedagroupco.com/solar-panels/",
+        "https://vedagroupco.com/rdf-pellets/",
+        "https://vedagroupco.com/contact-us/",
+        "https://www.facebook.com/vedagroupco/",
+        "https://www.instagram.com/vedagroupco/",
+        "https://vedagroupco.com/residential-project/sai-amar/",
+        "https://vedagroupco.com/residential-project/urban-balance/",
+        "https://vedagroupco.com/residential-project/sai-sankalp/",
+        "https://vedagroupco.com/residential-project/sai-purva/",
+        "https://vedagroupco.com/residential-project/sai-sulochana/",
+        "https://vedagroupco.com/residential-project/sai-park/",
+        "https://vedagroupco.com/events/",
+        "https://vedagroupco.com/uncategorized/nri-corner/",
+        "#",
+        "https://affablemarkcaters.com/"
+      ],
+      "structuredData": []
+    },
+    {
+      "requestedUrl": "https://www.frenger.com/",
+      "finalUrl": "https://www.frenger.com/",
+      "status": 200,
+      "title": "Frenger | International Business Development | London",
+      "description": "Frenger International is a leading provider of International Business Development &amp; Investment Services in Europe",
+      "approximateExtractedWords": 429,
+      "links": [
+        "https://www.frenger.com",
+        "https://www.frenger.com/our-services",
+        "https://www.frenger.com/business-services",
+        "https://www.frenger.com/fdi-services",
+        "https://www.frenger.com/export-promotion",
+        "https://www.frenger.com/m-a-target-identification",
+        "https://www.frenger.com/frenger",
+        "https://www.frenger.com/meet-the-team",
+        "https://www.frenger.com/locations",
+        "https://www.frenger.com/clients",
+        "https://www.frenger.com/contact",
+        "https://altios.com/",
+        "mailto:info@frenger.com",
+        "https://www.frenger.com/privacy-policy",
+        "https://www.linkedin.com/company/frenger-international"
+      ],
+      "structuredData": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Frenger ",
+          "url": "https://www.frenger.com"
+        }
+      ]
+    },
+    {
+      "requestedUrl": "https://delvinco.com/",
+      "finalUrl": "https://delvinco.com/",
+      "status": 200,
+      "title": "Delvinco | Export Development Services",
+      "description": "Delvinco is since more than 10 year",
+      "approximateExtractedWords": 423,
+      "links": [
+        "/",
+        "/Representations/",
+        "/Representations/alcoholic-beverages-representation",
+        "/Representations/food-representation",
+        "/Representations/industry-representation-gcc",
+        "/Representations/opportunities",
+        "/Representations/faq-s",
+        "/contact",
+        "mailto:office@delvinco.com"
+      ],
+      "structuredData": []
+    },
+    {
+      "requestedUrl": "https://evanssalesconsultancy.co.uk/international-market-entry",
+      "finalUrl": "https://evanssalesconsultancy.co.uk/international-market-entry",
+      "status": 200,
+      "title": "International Market Entry Consultant | Evans",
+      "description": "International market entry for manufacturers and specialist B2B businesses: market assessment, route to market, distributors and business development.",
+      "approximateExtractedWords": 6386,
+      "links": [
+        "#main",
+        "tel:+443300438477",
+        "mailto:international@evanssalesconsultancy.co.uk",
+        "/global-clients/united-kingdom",
+        "/global-clients/ireland",
+        "/global-clients/germany",
+        "/global-clients/france",
+        "/global-clients/netherlands",
+        "/global-clients/belgium",
+        "/global-clients/spain",
+        "/global-clients/italy",
+        "/global-clients/portugal",
+        "/global-clients/switzerland",
+        "/global-clients/austria",
+        "/global-clients/denmark",
+        "/global-clients/sweden",
+        "/global-clients/norway",
+        "/global-clients/finland",
+        "/global-clients/poland",
+        "/global-clients/czech-republic",
+        "/global-clients/united-states",
+        "/global-clients/canada",
+        "/global-clients/australia",
+        "/global-clients/turkey",
+        "/global-clients/mexico",
+        "/global-clients/united-arab-emirates",
+        "/global-clients/saudi-arabia",
+        "/global-clients/singapore",
+        "/global-clients/japan",
+        "/global-clients/south-korea",
+        "/global-clients/india",
+        "/global-clients/china",
+        "/global-clients/south-africa",
+        "/global-clients/brazil",
+        "/international-business-growth",
+        "/",
+        "/sales-growth",
+        "/opportunity-engine",
+        "/growth",
+        "/growth-route-finder",
+        "/growth-partner",
+        "/commercial-growth-sprint",
+        "/project-generation",
+        "/bid-tender-support",
+        "/customer-expansion-engine",
+        "/partner-distribution-engine",
+        "/partner-route-finder",
+        "/channel-creation",
+        "/channel-opportunity-finder",
+        "/acquisition-opportunity-engine",
+        "/acquisition-thesis-tool",
+        "/acquisition-insights",
+        "/startups",
+        "/sales-help-for-business-owners",
+        "/sales-strategy",
+        "/uk-sales-growth",
+        "/uk-sales-consultancy",
+        "/who-we-help",
+        "/what-we-do",
+        "/build-my-uk-sales-growth-plan",
+        "/sales-growth-assessment",
+        "/fractional-sales-director-cost-calculator",
+        "/international-market-entry",
+        "/uk-europe-market-entry",
+        "/distributor-partner-search",
+        "/build-my-market-entry-plan",
+        "/market-expansion",
+        "/international-market-entry-playbook",
+        "/european-market-development",
+        "/market-expansion/germany"
+      ],
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": [
+            "Organization",
+            "ProfessionalService"
+          ],
+          "@id": "https://evanssalesconsultancy.co.uk/#organization",
+          "name": "Evans Sales Consultancy",
+          "description": "Evans Sales Consultancy is a UK commercial consultancy based in Cumbria, supporting B2B businesses with sales growth, opportunity generation and managed prospecting, commercial strategy, fractional commercial leadership, international expansion, executive recruitment and digital infrastructure.",
+          "url": "https://evanssalesconsultancy.co.uk",
+          "logo": "https://evanssalesconsultancy.co.uk/brand-logo.png",
+          "image": "https://evanssalesconsultancy.co.uk/og-image.jpg",
+          "email": "info@evanssalesconsultancy.co.uk",
+          "telephone": "+443300438477",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "telephone": "+443300438477",
+            "email": "info@evanssalesconsultancy.co.uk",
+            "areaServed": [
+              "GB",
+              "EU",
+              "US",
+              "CA",
+              "AU"
+            ],
+            "availableLanguage": [
+              "English",
+              "French",
+              "German",
+              "Spanish (Spain)",
+              "Norwegian",
+              "Swedish",
+              "Danish",
+              "Finnish",
+              "Dutch",
+              "Italian",
+              "Portuguese (Portugal)",
+              "Portuguese (Brazil)",
+              "Polish",
+              "Simplified Chinese",
+              "Japanese",
+              "Hindi",
+              "Arabic"
+            ]
+          },
+          "areaServed": [
+            {
+              "@type": "Country",
+              "name": "United Kingdom"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Cumbria"
+            },
+            {
+              "@type": "Place",
+              "name": "Europe"
+            },
+            {
+              "@type": "Place",
+              "name": "North America"
+            },
+            {
+              "@type": "Country",
+              "name": "Australia"
+            }
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cumbria",
+            "addressCountry": "GB"
+          },
+          "founder": {
+            "@type": "Person",
+            "name": "Tom Evans",
+            "jobTitle": "International Sales & Market Development Director"
+          },
+          "knowsAbout": [
+            "Sales strategy",
+            "Business development",
+            "Sales growth",
+            "Opportunity generation and managed prospecting",
+            "Sales training",
+            "Sales management",
+            "CRM and pipeline management",
+            "Commercial strategy",
+            "Fractional commercial leadership",
+            "UK market entry",
+            "European market development",
+            "North American market development",
+            "International expansion",
+            "European market entry",
+            "Australian market development",
+            "Executive recruitment",
+            "Digital infrastructure"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Evans Sales Consultancy services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Commercial Growth Sprint"
+                },
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "price": "1495",
+                  "priceCurrency": "GBP"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Opportunity Engine — Intelligence"
+                },
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "695",
+                  "priceCurrency": "GBP",
+                  "unitText": "MONTH"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Opportunity Engine — Managed"
+                },
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "1295",
+                  "priceCurrency": "GBP",
+                  "unitText": "MONTH"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Customer Expansion Engine — Intelligence",
+                  "url": "https://evanssalesconsultancy.co.uk/customer-expansion-engine"
+                },
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "695",
+                  "priceCurrency": "GBP",
+                  "unitText": "MONTH"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Customer Expansion Engine — Managed",
+                  "url": "https://evanssalesconsultancy.co.uk/customer-expansion-engine"
+                },
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "1295",
+                  "priceCurrency": "GBP",
+                  "unitText": "MONTH"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Growth Partner",
+                  "url": "https://evanssalesconsultancy.co.uk/growth-partner"
+                },
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "1950",
+                  "priceCurrency": "GBP",
+                  "unitText": "MONTH"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Fractional Commercial Leadership"
+                },
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "minPrice": "2950",
+                  "priceCurrency": "GBP",
+                  "unitText": "MONTH"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "International Expansion"
+                },
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "minPrice": "3950",
+                  "priceCurrency": "GBP",
+                  "unitText": "MONTH"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does International Expansion cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "From £3,950 + VAT per month + 2.5% commission. The final scope is agreed around the market and work required; travel is invoiced at cost where applicable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you replace a distributor, agent or export manager?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. This is usually the work that happens before any of those exist — proving the territory is worth the investment and building the structure a permanent hire would inherit."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which territories do you work across?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The UK and Europe most often, with experience developing markets and commercial relationships in France, Germany and Scandinavia. North American market development is supported through assessment, route-to-market work and direct business development. Evans Sales Consultancy is UK based and has no overseas offices."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is this only for manufacturers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It suits manufacturers and product businesses best, because route to market is a genuine decision for them. Engineering and specialist B2B businesses expanding into new regions use the same territory-development approach."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a global CRM before expanding internationally?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not as a precondition. A simple, consistently used CRM is enough to start — what matters more early on is disciplined tracking of named accounts and conversations in the new territory. A global CRM rollout is worth planning once several markets are live and need shared visibility, not before the first pipeline exists."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can international market development be funded?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most clients fund this from existing trading profit or a dedicated expansion budget, sometimes alongside export or trade-growth grants and finance available in their sector or region — Evans does not provide funding or grant-writing advice directly, so eligibility should be checked with the relevant trade body or adviser. The commercial scope is agreed to fit what a business can realistically commit before results are proven."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth entering the Middle East market now?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends entirely on the sector and product — Evans Sales Consultancy's stated experience is strongest in the UK, Europe, North America and Australia, so a genuine view on Middle East timing needs a specific market assessment rather than a general answer, and may draw on partners with direct regional experience where Evans' own does not extend far enough. Treat any Middle East plan as its own market-entry decision, not an extension of a European or North American one."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need to speak Italian to sell B2B in Italy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not to start a conversation, but formal proposals, contracts and technical documentation in Italian materially improve how seriously a buyer takes a first-time supplier — the same pattern seen in France and Germany. There is no dedicated Evans Italy market hub yet; the general principle of preparing local-language commercial materials before serious outreach still applies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you manage timezone challenges across international sales?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By agreeing realistic working windows up front — some overlap with the target market's business hours, rather than expecting a market to adapt to a UK day. For Australia and the Middle East this usually means structured early-morning or evening contact rather than daily full overlap; for North America it means part of the UK afternoon. This is agreed as part of scoping, not discovered once the engagement starts."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does international market entry look like for a B2B SaaS company?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The sales-problem discipline is the same, but the route to market differs: SaaS usually suits a direct or inside-sales motion into named accounts, or a reseller/partner model where local billing, support and compliance matter more than physical distribution. Evans applies the same market assessment and route-to-market process; data residency, currency and local contracting norms should be checked with appropriate legal and technical advisers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I scale from £1m to £5m through international sales?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Usually by proving one additional market properly rather than spreading activity across several: assess demand, pick a route to market, build a named target list, and convert enough live opportunities in that territory to justify the next one. Growth of this scale through international sales is a multi-year sequencing decision, not a single campaign."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the main cultural pitfalls in international B2B negotiations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most common is applying UK pace and informality to markets that expect more formal documentation, longer relationship-building or a different negotiating rhythm — seen clearly in France and Germany, for example. Evans brings commercial negotiation experience in-market rather than formal cross-cultural training; where a deal carries specific legal or contractual risk, that should still be reviewed by a local adviser."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where does the engagement usually stop?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "That is decided commercially rather than contractually. Some engagements end once the route to market and first relationships exist; others continue into ongoing representation and account development."
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "International Market Entry",
+          "description": "International market entry for manufacturers and specialist B2B businesses: market assessment, route to market, distributors and business development.",
+          "serviceType": "International Market Entry",
+          "url": "https://evanssalesconsultancy.co.uk/international-market-entry",
+          "provider": {
+            "@type": "Organization",
+            "name": "Evans Sales Consultancy",
+            "url": "https://evanssalesconsultancy.co.uk",
+            "@id": "https://evanssalesconsultancy.co.uk/#organization"
+          },
+          "areaServed": [
+            {
+              "@type": "Country",
+              "name": "United Kingdom"
+            },
+            {
+              "@type": "Place",
+              "name": "Europe"
+            },
+            {
+              "@type": "Place",
+              "name": "North America"
+            },
+            {
+              "@type": "Country",
+              "name": "Australia"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://evanssalesconsultancy.co.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "International Market Entry",
+              "item": "https://evanssalesconsultancy.co.uk/international-market-entry"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

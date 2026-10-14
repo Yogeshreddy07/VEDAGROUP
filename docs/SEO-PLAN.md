@@ -23,10 +23,10 @@ These observations suggest that the main challenge is entity ambiguity plus the 
 
 ## Implemented in this repository
 
-- Replaced global noindex/nofollow and crawl blocking with production index/follow metadata and public crawling. Development and Vercel previews remain blocked. Other staging builds must use SEO_INDEXING=false at build time.
+- Replaced global noindex/nofollow and crawl blocking with production index/follow metadata and public crawling. Development and Vercel previews remain blocked. Production builds on the official origin are indexable by default; staging builds on that origin must set SEO_INDEXING=false. See outputs/seo/SEO_AUDIT_REPORT.md for the 13 October follow-up audit.
 - Centralized the canonical domain in SITE_URL, defaulting to https://vedagroup.uk. SITE_ORIGIN remains the separate enquiry security setting. No email integration, credentials or request handling was changed.
 - Added unique branded titles, descriptions, canonical URLs, Open Graph URLs and Twitter cards across the six main routes and ten service pages.
-- Added Organization and WebSite identity markup, page markup, service markup and hierarchical BreadcrumbList markup. Details come from existing public copy; no fictional address, founder, reviews or social profiles were added.
+- Added Organization and WebSite identity markup, page markup, service markup and hierarchical BreadcrumbList markup. The follow-up audit restored the layout graph after finding it had regressed to minimal Organization-only markup. Details come from existing public copy; no fictional address, founder, reviews or social profiles were added.
 - Added accessible service breadcrumbs with Home > Services > Service and preserved existing navigation and all service links.
 - Produced an XML sitemap of the 16 substantive pages. Empty Insights and the three legal drafts retain noindex and are excluded. Sitemap timestamps are omitted because there is no reliable editorial modification-date source. Arbitrary priorities and change frequencies were removed.
 - Added a share image generated locally by Next.js and a favicon consistent with the existing temporary wordmark. Neither is represented as an approved corporate logo.
@@ -60,7 +60,7 @@ Funding, investment, legal and transaction copy retains its actual service limit
 
 ## Highest-priority work before and immediately after deployment
 
-1. Publish the reviewed build on the confirmed domain. Production environment: SITE_URL=https://vedagroup.uk, SEO_INDEXING=true. Set the actual Search Console verification token if using URL-prefix verification. Changes to build-time settings require rebuilding. Preserve the existing enquiry configuration.
+1. Publish the reviewed build on the confirmed domain. Production environment: SITE_URL=https://vedagroup.uk (indexing needs no further setting). Set the actual Search Console verification token if using URL-prefix verification. Changes to build-time settings require rebuilding. Preserve the existing enquiry configuration.
 2. Configure the host to redirect HTTP and www variants permanently to the chosen HTTPS non-www URLs, preserving paths and query strings. Avoid publishing duplicate copies on another domain. Only redirect an old domain if it actually belongs to this business; none was identified here.
 3. Check every public route returns HTTP 200, unknown service URLs return 404, and the host adds no noindex X-Robots-Tag or access gate. Confirm /robots.txt permits public crawling and /sitemap.xml uses only the official origin. Host-level rules can override application behavior.
 4. Verify a Search Console Domain property using DNS, or a URL-prefix property using the configured token. Submit https://vedagroup.uk/sitemap.xml. Inspect the home page, About, Services, Contact and market-entry route; request indexing and check Google's selected canonical. Do not repeatedly submit the same URL expecting a ranking boost.
