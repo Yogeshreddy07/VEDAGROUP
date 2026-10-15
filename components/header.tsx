@@ -17,9 +17,10 @@ export function Header(){
   return()=>{document.removeEventListener('keydown',key);document.removeEventListener('pointerdown',outside);window.removeEventListener('scroll',scroll);mq.removeEventListener('change',resize);};},[]);
  useEffect(()=>{document.body.classList.toggle('menu-open',open);return()=>document.body.classList.remove('menu-open');},[open]);
  const navClick=(e:React.MouseEvent)=>{if((e.target as HTMLElement).closest('a'))closeAll();};
+ const homeClick=(e:React.MouseEvent)=>{closeAll();if(path!=='/'||e.metaKey||e.ctrlKey||e.shiftKey||e.button!==0)return;e.preventDefault();window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});};
  const inServices=path.startsWith('/services');
  return <header className={'header'+(scrolled?' is-scrolled':'')+(open?' is-open':'')} ref={ref}><div className="container header-inner">
-  <Link href="/" className="wordmark" aria-label="Veda Group home">VEDA<span>GROUP</span><small>INTERNATIONAL BUSINESS DEVELOPMENT</small></Link>
+  <Link href="/" className="wordmark" aria-label="Veda Group home" onClick={homeClick}>VEDA<span>GROUP</span><small>INTERNATIONAL BUSINESS DEVELOPMENT</small></Link>
   <button ref={button} className="menu-button" aria-expanded={open} aria-controls="main-nav" onClick={()=>setOpen(!open)}><span className="menu-label">{open?'Close':'Menu'}</span><span className="burger" aria-hidden="true"><i/><i/><i/></span></button>
   <nav id="main-nav" className={open?'navigation is-open':'navigation'} aria-label="Main navigation" onClick={navClick}>
    <div className="nav-links">
